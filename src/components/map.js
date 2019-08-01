@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react';
 import LOCATION from '../utils/locations'
-import WeatherBar from './weather'
-import { makeStyles } from '@material-ui/core/styles';
 import Modal from '@material-ui/core/Modal';
 import CancelIcon from '@material-ui/icons/Cancel'
 
@@ -126,7 +124,7 @@ export class MapContainer extends React.Component {
 
 }
 
-
+// export google api wrapper, this could be more secure but the data is free, therefore I care less.
 export default GoogleApiWrapper({
-    apiKey: ('AIzaSyA0h0z5UwtcKMGQTDoOe7DeY6UF_9R1jP8')
+    apiKey: (process.env.REACT_APP_GOOGLE_MAP_API_KEY);
 })(MapContainer)
