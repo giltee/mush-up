@@ -11,3 +11,30 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.iframe-container {
+  margin: 25%;
+  position: relative;
+  width: 350px;
+  height: 300px;
+
+}
+
+.weatherModal {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  height: 600px;
+  width: 800px;
+  outline: none;
+}
+
+.modal {
+  outline: none !important;
+}
+
+.cancel {
+  position: relative;
+  margin-bottom: 65% !important;
+  right: 200px;
+}
