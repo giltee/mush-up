@@ -113,6 +113,7 @@ export class MapContainer extends React.Component {
                                 className="iframe-container"></iframe>
                         <CancelIcon className="cancel"
                                     onClick={this.handleClose}
+                                    fontSize="large"
                         />
                     </div>
 
